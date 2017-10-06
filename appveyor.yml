@@ -1,0 +1,6 @@
+clone_folder: c:\test\%APPVEYOR_REPO_NAME%
+build: off
+test: off
+artifacts:
+- path: '*.yml'
+  name: yaml
