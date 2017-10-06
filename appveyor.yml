@@ -5,4 +5,4 @@ artifacts:
 - path: '*.yml'
   name: yaml
 deploy_script:
-- ps: if(!$artifacts) {throw "no artifacts packaged"}
+- ps: if($artifacts.Count -eq 0) {throw "no artifacts packaged"}
